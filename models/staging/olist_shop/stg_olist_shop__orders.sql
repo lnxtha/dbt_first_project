@@ -8,9 +8,7 @@ renamed as (
 
     select
         order_id,
-        substr(order_id, 1, 10) as cstm_order_id,
         customer_id,
-        substr(customer_id, 1, 10) as cstm_cst_id,
         order_status,
         order_purchase_timestamp,
         order_approved_at,
