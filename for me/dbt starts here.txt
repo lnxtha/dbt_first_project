@@ -1,0 +1,30 @@
+-- dbt starts here
+
+# Create virtual env and install the following packages
+-- creat virtual env env_dbt
+-- pip install dbt-core dbt-postgres
+
+# Run following for initiating project
+dbt init dbt_first_project
+
+-- for codegen go to following and follow along
+https://hub.getdbt.com/ - Codegen
+
+# Run this for generating source file yml file
+dbt run-operation generate_source --args '{"schema_name": "raw", "database_name": "dbt_local"}'
+
+# For Lineage graph
+dbt docs generate
+dbt docs serve --port 8080
+
+
+# Note: Clean Ups
+# To do in this project
+
+1. Renaming columns - for clarity and consistency
+2. Filtering rows -  Removing irrelevant or invalid records
+3. Type Casting - Converting data types for consistency
+4. Basic computations - i.e. Converting cents to dollars
+5. Basic date transformations 
+
+# Make use of dbt style guide

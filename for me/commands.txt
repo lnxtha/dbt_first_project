@@ -1,0 +1,14 @@
+psql -h localhost -U linusxrstha -d analytics
+
+-- virtual env
+
+-- create : python3 -m venv .venv
+-- access: source .venv/bin/activate
+
+
+Field	Value
+Host	localhost
+Port	5432 (default)
+Database	analytics
+Username	linusxrstha
+Password	Your PostgreSQL user's password
